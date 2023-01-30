@@ -8,6 +8,18 @@ document.querySelectorAll('#menu *').forEach((item) => {
     }
 })
 
+document.getElementById('linkToProducts').onclick = function () {
+    document.getElementsByClassName('products')[0].scrollIntoView( {behavior: "smooth"});
+}
+
+document.getElementById('linkToOrder').onclick = function () {
+    document.getElementsByClassName('order')[0].scrollIntoView( {behavior: "smooth"});
+}
+
+document.getElementById('linkToAbout').onclick = function () {
+    document.getElementsByClassName('main')[0].scrollIntoView( {behavior: "smooth"});
+}
+
 document.getElementById('choose-pizza').onclick = function () {
     document.getElementsByClassName('products')[0].scrollIntoView( {behavior: "smooth"});
 }
